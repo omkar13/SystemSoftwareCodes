@@ -1,0 +1,26 @@
+[student@localhost 201401114_lab1]$ gdb ./lab1Ex4
+GNU gdb (GDB) Fedora (7.1-18.fc13)
+Copyright (C) 2010 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "i686-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /home/student/Desktop/201401114_lab1/lab1Ex4...done.
+(gdb) run
+Starting program: /home/student/Desktop/201401114_lab1/lab1Ex4 
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080483aa in main () at lab1Ex4.c:11
+11	a1[0] = 1;
+Missing separate debuginfos, use: debuginfo-install glibc-2.12-1.i686
+(gdb) 
+
+
+
+Q1) segmentaion fault at line : 11 a1[0]=1;
+
+Q2) because we are accessing memory outside memory allocated for our program. 
+
